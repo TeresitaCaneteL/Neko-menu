@@ -31,25 +31,20 @@ export default function MenuItem({ name, description, price, image }: Props) {
   return (
     <motion.div
       variants={itemVariant}
-      className=" text-white rounded-2xl shadow-lg flex flex-col sm:flex-row sm:items-center gap-2 p-1"
+      className="w-full flex flex-row items-center gap-4 p-3 rounded-xl shadow-sm bg-[#111] border border-gray-800"
     >
       <img
         src={image}
         alt={name}
-        className="w-full sm:w-20 h-20 object-contain rounded-t-xl sm:rounded-l-xl sm:rounded-t-none"
+        className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-md bg-white p-1"
       />
-      <div className="p-2 flex flex-col justify-between sm:justify-center">
-        <div>
-          <h3 className="text-lg font-bold">{name}</h3>
-          <p className={isPdfMode ? "text-[#fff]" : "text-gray-400 text-sm"}>
-            {description}
-          </p>
-        </div>
-        <p className={isPdfMode ? "text-[#b08900]" : "text-yellow-500 font-semibold mt-2"}>
-          {price}
-        </p>
+      <div className="flex-1">
+        <h3 className="text-base font-semibold">{name}</h3>
+        <p className="text-sm text-gray-400 leading-tight">{description}</p>
+        <p className="text-sm text-yellow-500 font-bold mt-1">{price}</p>
       </div>
     </motion.div>
+
 
   );
 }
