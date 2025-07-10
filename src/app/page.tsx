@@ -51,7 +51,7 @@ export default function Home() {
   }));
 
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-12 max-w-4xl mx-auto">
+    <main className="min-h-screen bg-[#0a0a0a] text-white px-6 py-12 max-w-4xl mx-auto">
       <div id="pdf-content" className="clean-for-pdf">
         <h1
           className={

@@ -14,7 +14,7 @@ export default function CategoryNav({ categorias }: Props) {
   const activeId = useActiveSection(categorias.map((c) => c.id));
 
   return (
-    <div className="sticky top-0 z-10 bg-[#000] border-b border-yellow-500 mb-10">
+    <div className="sticky top-0 z-10 bg-[#0a0a0a] border-b border-yellow-500 mb-10">
       {/* Móvil: menú desplegable */}
       <details className="md:hidden p-4 cursor-pointer select-none">
         <summary className="text-yellow-400 font-bold text-center">
