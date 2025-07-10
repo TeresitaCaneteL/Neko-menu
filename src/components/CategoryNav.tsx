@@ -26,7 +26,7 @@ export default function CategoryNav({ categorias }: Props) {
               key={cat.id}
               href={`#${cat.id}`}
               className={clsx(
-                "text-sm font-medium px-4 py-2 rounded-full border border-yellow-500 transition-all w-fit",
+                "text-sm font-medium px-4 py-2 rounded-full border border-yellow-500 transition-all w-fit ",
                 cat.id === activeId
                   ? "bg-yellow-500 text-black"
                   : "text-yellow-400 hover:bg-yellow-500 hover:text-black"

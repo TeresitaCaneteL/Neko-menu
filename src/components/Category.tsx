@@ -26,13 +26,13 @@ export default function Category({ title, items }: Props) {
   return (
     <motion.section
       id={id}
-      className="mb-12 mt-16"
+      className="mb-12 mt-16 scroll-mt-32"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-3xl font-bold text-yellow-400 text-left mb-8 relative">
+      <h2 className="text-3xl font-bold text-yellow-400 text-left mb-8 relative ">
         <span className="inline-block uppercase before:content-['🍜'] after:content-['🍜'] px-4">
           {title}
         </span>
