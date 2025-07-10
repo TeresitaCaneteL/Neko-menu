@@ -32,7 +32,7 @@ export default function Category({ title, items }: Props) {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-3xl font-bold text-yellow-400 text-center mb-8 relative">
+      <h2 className="text-3xl font-bold text-yellow-400 text-left mb-8 relative">
         <span className="inline-block uppercase before:content-['🍜'] after:content-['🍜'] px-4">
           {title}
         </span>
