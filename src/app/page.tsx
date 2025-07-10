@@ -56,15 +56,15 @@ export default function Home() {
         <h1
           className={
             isPdfMode
-              ? "text-4xl font-bold text-[#eab308] text-center mb-10"
-              : "text-4xl font-bold text-yellow-400 text-center mb-10"
+              ? "text-4xl font-bold text-[#eab308] text-center mb-6"
+              : "text-4xl font-bold text-yellow-400 text-center mb-6"
           }
         >
           🐾 Neko Ramen House
         </h1>
 
         {isPdfMode ? (
-          <p className="text-center text-lg mb-12 text-white">
+          <p className="text-center text-lg mb-2 text-white">
             Bienvenido a nuestro menú de ramen, donde la tradición japonesa se
             encuentra con la pasión por la cocina...
           </p>
